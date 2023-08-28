@@ -1,0 +1,358 @@
+.contenedor_todo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    height: 9%;
+    width: 100%;
+    background-color: rgb(29, 27, 27);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contenedor_principal{
+    height: 91%;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #3d3d3d #c9ffa3;
+}
+
+.contenedor_principal::-webkit-scrollbar {
+    width: 10px;
+}
+
+.contenedor_principal::-webkit-scrollbar-thumb {
+    background: #272727;
+    border-radius: 15px;
+}
+
+.contenedor_principal::-webkit-scrollbar-track{
+    background: #a0a0a0; /* Cambia este color al que desees */
+    
+}
+
+.logo{
+    height: 95%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: 0.2s;
+}
+
+.logo:hover{
+    cursor: pointer;
+    height: 100%;
+}
+
+.contenedores_varios{
+    height: 100%;
+    width: 4.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    gap: 20%;
+    cursor: pointer;
+}
+
+.contenedores_varios:hover>.subtitulo { 
+    background-color:#3b3b3b;
+}
+
+.contenedores_varios:hover>.barra { 
+    display: flex;
+}
+
+.subtitulo{
+    height: 40%;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    cursor: default;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.barra{
+    height: 5%;
+    width: 100%;
+    border-radius: 15%;
+    background-color: #c9ffa3;
+    display: none;
+}
+
+.jugar_ahora{
+    height: 45%;
+    width: 9.5%;
+    background: linear-gradient(to right, #c7fda3, #58c20a, #317300);
+    border-radius: 12px;
+    margin-left: 22%;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.jugar_ahora:hover{
+    width: 10%;
+    margin-left: 21%;
+}
+
+.forma {
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%, 0% 20%);
+    height: 70%;
+    width: 100%;
+    background-image: url(poster.jpeg);
+  }
+
+  .redes{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor_redes{
+    clip-path: polygon(2% 0, 98% 0, 100% 30%, 100% 70%, 100% 100%, 30% 100%, 0 100%, 0% 30%);
+    width: 80%;
+    height: 40%;
+    background-color: #07380a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    gap: 1%;
+  }
+
+  .r{
+    cursor: pointer;
+  }
+
+  .personajes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .informacion{
+    height: 25%;
+    width: 100%;
+    font-family: "Beaufort for LOL", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+    font-size: 30px;
+    font-style: italic;
+  }
+
+  .contenedor_random{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .seleccionar{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seleccionar_personaje{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .simbolos{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    gap: 27%;
+  }
+
+  .circulo1{
+    height: 20%;
+    width: 6%;
+    border: solid 4px #3b7015;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+  .circulo1:hover{
+    height: 22%;
+  }
+
+  .circulo2{
+    height: 20%;
+    width: 6%;
+    border: solid 4px black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+  .circulo2:hover{
+    height: 22%;
+  }
+
+
+  .linea_simbolos{
+    height: 14%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;    
+  }
+
+  .lineaxd1{
+    height: 100%;
+    width: 2px;
+    background-color: #3b7015;
+    transition: 0.5s;
+  }
+
+  .lineaxd2{
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    transition: 0.5s;
+  }
+
+  .linea{
+    height: 50%;
+    width: 100%;
+    border-top: 1px solid black;
+    font-family: "Beaufort for LOL", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18.5px;
+    font-style: italic;
+  }
+
+  .foto_personaje{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+
+  .circulo_personaje {
+    position: relative;
+    width: 70%; /* Ajusta el tamaño del círculo según tus necesidades */
+    height: 100%; /* Ajusta el tamaño del círculo según tus necesidades */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .circulo_personaje::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-top-color: #3b7015;
+    border-left-color: #3b7015;
+    border-radius: 50%;
+    animation: spin-border 4s linear infinite;
+  }
+  
+  .circulo_personaje.active {
+    border-color: #3b7015; /* Cambiar el color del borde al seleccionar un personaje */
+  }
+  
+  .imagen-personaje {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .circulo_personaje.active #imagenMeisy {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+  }
+  
+  .circulo_personaje.active #imagenPaul {
+    opacity: 0;
+    transform: scale(1);
+    z-index: 1;
+  }
+  
+  .circulo_personaje::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid transparent;
+    border-top-color: #3b7015;
+    border-left-color: #3b7015;
+    border-radius: 50%;
+    animation: spin-border 4s linear infinite;
+  }
+  
+  @keyframes spin-border {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
